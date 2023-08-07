@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Identity;
+using Miningcore.Crypto.Hashing.Evrprogpow;
 using Miningcore.Crypto.Hashing.Kawpow;
 using Miningcore.Native;
 using Newtonsoft.Json;
@@ -36,6 +37,9 @@ public enum CoinFamily
 
     [EnumMember(Value = "ergo")]
     Ergo,
+
+    [EnumMember(Value = "evrmore")]
+    Evrmore,
 
     [EnumMember(Value = "ravencoin")]
     Ravencoin,
@@ -143,6 +147,7 @@ public abstract partial class CoinTemplate
         {CoinFamily.Cryptonote, typeof(CryptonoteCoinTemplate)},
         {CoinFamily.Ethereum, typeof(EthereumCoinTemplate)},
         {CoinFamily.Ergo, typeof(ErgoCoinTemplate)},
+        {CoinFamily.Evrmore, typeof(EvrmoreTemplate)},
         {CoinFamily.Ravencoin, typeof(RavencoinTemplate)},
     };
 }
@@ -210,6 +215,9 @@ public partial class BitcoinTemplate : CoinTemplate
     public bool HasMinerFund { get; set; }
 
     [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
+    public bool HasMinerDevFund { get; set; }
+
+    [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
     public bool HasCommunityAddress { get; set; }
 
     [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)]
@@ -253,6 +261,11 @@ public partial class BitcoinTemplate : CoinTemplate
 public partial class RavencoinTemplate : BitcoinTemplate
 {
     public EthashLight KawpowHasher { get; set; }
+}
+
+public partial class EvrmoreTemplate : BitcoinTemplate
+{
+    public EvrProgpowLight EvrprogpowHasher { get; set; }
 }
 
 public enum EquihashSubfamily

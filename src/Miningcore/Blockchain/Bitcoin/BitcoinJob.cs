@@ -249,6 +249,9 @@ public class BitcoinJob
         if(coin.HasMinerFund)
             rewardToPool = CreateMinerFundOutputs(tx, rewardToPool);
 
+        if(coin.HasMinerDevFund)
+            rewardToPool = CreateMinerDevFundOutputs(tx, rewardToPool);
+
         if (coin.HasCommunityAddress)
             rewardToPool = CreateCommunityAddressOutputs(tx, rewardToPool);
 
@@ -596,6 +599,27 @@ public class BitcoinJob
 
     #endregion // Founder
 	
+    #region MinerDevfund
+
+    protected MinerDevFundTemplateExtra minerDevFundParameters;
+
+    protected virtual Money CreateMinerDevFundOutputs(Transaction tx, Money reward)
+    {
+        var payeeReward = minerDevFundParameters.MinimumValue;
+
+        if(!string.IsNullOrEmpty(minerDevFundParameters.Addresses?.FirstOrDefault()))
+        {
+            var payeeAddress = BitcoinUtils.AddressToDestination(minerDevFundParameters.Addresses[0], network);
+            tx.Outputs.Add(payeeReward, payeeAddress);
+        }
+
+        reward -= payeeReward;
+
+        return reward;
+    }
+
+    #endregion // Founder
+
     #region CommunityAddress
 
     protected virtual Money CreateCommunityAddressOutputs(Transaction tx, Money reward)
@@ -777,10 +801,13 @@ public class BitcoinJob
         if(coin.HasFounderReward)
             founderrewardParameters = BlockTemplate.Extra.SafeExtensionDataAs<FounderRewardBlockTemplateExtra>();
 
-		if(coin.HasMinerFund)
-			minerFundParameters = BlockTemplate.Extra.SafeExtensionDataAs<MinerFundTemplateExtra>("coinbasetxn", "minerfund");
-		
-        if(coin.HasCoinbaseDevReward)
+        if(coin.HasMinerFund)
+            minerFundParameters = BlockTemplate.Extra.SafeExtensionDataAs<MinerFundTemplateExtra>("coinbasetxn", "minerfund");
+
+        if(coin.HasMinerDevFund)
+            minerDevFundParameters = BlockTemplate.Extra.SafeExtensionDataAs<MinerDevFundTemplateExtra>("coinbasetxn", "minerdevfund");
+
+		if(coin.HasCoinbaseDevReward)
             CoinbaseDevRewardParams = BlockTemplate.Extra.SafeExtensionDataAs<CoinbaseDevRewardTemplateExtra>();
 
 		if(coin.HasFoundation)

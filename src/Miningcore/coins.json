@@ -1985,7 +1985,12 @@
         "headerHasher": {
             "hash": "sha256d"
         },
-        "hasCommunityAddress": true,
+        "hasFounderFee": true,
+        "hasMasterNodes": true,
+		"hasSmartNodes": true,
+        "foundersRewardAddress": [
+            "GTbBCJzqRWyFBMrap2fY39eZaXnLnojJ3F"
+        ],
         "shareMultiplier": 1,
         "explorerBlockLink": "https://explorer.neoxa.net/block/$hash$",
         "explorerTxLink": "https://explorer.neoxa.net/tx/{0}",

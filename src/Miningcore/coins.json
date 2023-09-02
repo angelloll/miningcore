@@ -1341,6 +1341,48 @@
         "explorerTxLink": "https://explorer.fulminareproject.com/transaction/{0}",
         "explorerAccountLink": "https://explorer.fulminareproject.com/address/{0}"
     },
+    "clore": {
+        "name": "Clore",
+        "symbol": "CLORE",
+        "family": "ravencoin",
+        "website": "https://clore.ai/",
+        "market": "https://www.coingecko.com/en/coins/clore-ai",
+        "twitter": "https://twitter.com/clore_ai",
+        "telegram": "https://t.me/clorechat",
+        "discord": "https://discord.com/invite/7sAEVGza8w",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+		"hasCommunityAddress": true,
+        "shareMultiplier": 1,
+        "explorerBlockLink": "https://exploreblockchain.clore.ai/block/$hash$",
+        "explorerTxLink": "https://exploreblockchain.clore.ai/tx/{0}",
+        "explorerAccountLink": "https://exploreblockchain.clore.ai/address/{0}"
+    },
+    "meowcoin": {
+        "name": "Meowcoin",
+        "symbol": "MEWC",
+        "family": "ravencoin",
+        "website": "https://www.mewccrypto.com/",
+        "market": "https://www.coingecko.com/en/coins/meowcoin",
+        "twitter": "https://twitter.com/meowcoin2023",
+        "telegram": "",
+        "discord": "https://discord.com/invite/EYv5cCjQRd",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "sha256d"
+        },
+		"hasCommunityAddress": true,
+        "shareMultiplier": 1,
+        "explorerBlockLink": "https://explorer.mewccrypto.com/block/$hash$",
+        "explorerTxLink": "https://explorer.mewccrypto.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.mewccrypto.com/address/{0}"
+    },
     "garlicoin": {
         "name": "Garlicoin",
         "symbol": "GRLC",
@@ -4978,7 +5020,7 @@
         "canonicalName": "Octa.Space",
         "symbol": "OCTA",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://octa.space/",
         "market": "https://coinmarketcap.com/currencies/octaspace/",
         "twitter": "https://twitter.com/octa_space",
@@ -4990,7 +5032,6 @@
         },
         "explorerTxLink": "https://explorer.octa.space/tx/{0}",
         "explorerAccountLink": "https://explorer.octa.space/address/{0}",
-        "ethasher": "ethash"
     },
     "ergo": {
         "name": "Ergo",

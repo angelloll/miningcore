@@ -5002,7 +5002,7 @@
         "canonicalName": "Bitnet-Money",
         "symbol": "BTN",
         "family": "ethereum",
-		"ethasher": "ethash",
+	"ethasher": "ethash",
         "website": "https://bitnet.money/",
         "market": "https://xeggex.com/market/BTN_USDT",
         "twitter": "",

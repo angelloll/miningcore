@@ -44,6 +44,9 @@ public enum CoinFamily
     [EnumMember(Value = "ravencoin")]
     Ravencoin,
 
+    [EnumMember(Value = "nexa")]
+    Nexa,
+
 }
 
 public abstract partial class CoinTemplate
@@ -155,6 +158,7 @@ public abstract partial class CoinTemplate
         {CoinFamily.Ergo, typeof(ErgoCoinTemplate)},
         {CoinFamily.Evrmore, typeof(EvrmoreTemplate)},
         {CoinFamily.Ravencoin, typeof(RavencoinTemplate)},
+        {CoinFamily.Nexa, typeof(BitcoinTemplate)},
     };
 }
 
@@ -265,6 +269,12 @@ public partial class BitcoinTemplate : CoinTemplate
 
     [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
     public string BlockSerializer { get; set; }
+
+    /// <summary>
+    /// Amount of decimals used for payouts
+    /// </summary>
+    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    public int? PayoutDecimalPlaces { get; set; } = 4;
 }
 
 public partial class RavencoinTemplate : BitcoinTemplate

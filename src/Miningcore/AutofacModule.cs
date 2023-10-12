@@ -9,6 +9,7 @@ using Miningcore.Blockchain.Equihash;
 using Miningcore.Blockchain.Ethereum;
 using Miningcore.Blockchain.Evrmore;
 using Miningcore.Blockchain.Ravencoin;
+using Miningcore.Blockchain.Nexa;
 using Miningcore.Configuration;
 using Miningcore.Crypto;
 using Miningcore.Crypto.Hashing.Equihash;
@@ -193,6 +194,10 @@ public class AutofacModule : Module
         // Ravencoin
 
         builder.RegisterType<RavencoinJobManager>();
+
+        //////////////////////
+        // Nexa
+        builder.RegisterType<NexaJobManager>();
 
         base.Load(builder);
     }

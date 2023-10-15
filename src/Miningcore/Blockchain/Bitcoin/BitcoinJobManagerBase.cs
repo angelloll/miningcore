@@ -25,8 +25,7 @@ public abstract class BitcoinJobManagerBase<TJob> : JobManagerBase<TJob>
         IComponentContext ctx,
         IMasterClock clock,
         IMessageBus messageBus,
-        IExtraNonceProvider extraNonceProvider,
-        bool noPoolAddressDestination = false) :
+        IExtraNonceProvider extraNonceProvider) :
         base(ctx, messageBus)
     {
         Contract.RequiresNonNull(ctx);
@@ -36,7 +35,6 @@ public abstract class BitcoinJobManagerBase<TJob> : JobManagerBase<TJob>
 
         this.clock = clock;
         this.extraNonceProvider = extraNonceProvider;
-        this.noPoolAddressDestination = noPoolAddressDestination;
     }
 
     protected readonly IMasterClock clock;
@@ -51,7 +49,6 @@ public abstract class BitcoinJobManagerBase<TJob> : JobManagerBase<TJob>
     protected DateTime? lastJobRebroadcast;
     protected bool hasSubmitBlockMethod;
     protected bool isPoS;
-    private readonly bool noPoolAddressDestination;
     protected TimeSpan jobRebroadcastTimeout;
     protected Network network;
     protected IDestination poolAddressDestination;
@@ -466,11 +463,6 @@ public abstract class BitcoinJobManagerBase<TJob> : JobManagerBase<TJob>
         else
             network = daemonInfoResponse.Testnet ? Network.TestNet : Network.Main;
 
-		if(blockchainInfoResponse.Chain == "nexa")
-		{
-			network = Network.Main;
-		}
-
         PostChainIdentifyConfigure();
 
         // ensure pool owns wallet
@@ -481,14 +473,15 @@ public abstract class BitcoinJobManagerBase<TJob> : JobManagerBase<TJob>
             (difficultyResponse.Values().Any(x => x.Path == "proof-of-stake" && !difficultyResponse.Values().Any(x => x.Path == "proof-of-work")));
 
         // Create pool address script from response
-        if(!isPoS && !noPoolAddressDestination)
+        if(!isPoS)
         {
             if(extraPoolConfig != null && extraPoolConfig.AddressType != BitcoinAddressType.Legacy)
                 logger.Info(() => $"Interpreting pool address {poolConfig.Address} as type {extraPoolConfig?.AddressType.ToString()}");
 
             poolAddressDestination = AddressToDestination(poolConfig.Address, extraPoolConfig?.AddressType);
         }
-        else if(!noPoolAddressDestination)
+
+        else
             poolAddressDestination = new PubKey(poolConfig.PubKey ?? validateAddressResponse.PubKey);
 
         // Payment-processing setup

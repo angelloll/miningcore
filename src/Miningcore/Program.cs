@@ -57,7 +57,6 @@ using Prometheus;
 using WebSocketManager;
 using ILogger = NLog.ILogger;
 using LogLevel = Microsoft.Extensions.Logging.LogLevel;
-using NexaPow = Miningcore.Native.NexaPow;
 using static Miningcore.Util.ActionUtils;
 
 // ReSharper disable AssignNullToNotNullAttribute
@@ -805,9 +804,6 @@ public class Program : BackgroundService
 
         // Configure RandomARQ
         RandomARQ.messageBus = messageBus;
-
-        // Configure NexaPow
-        Crypto.Hashing.Algorithms.NexaPow.messageBus = messageBus;
     }
 
     private static async Task ConfigurePostgresCompatibilityOptions(IServiceProvider services)

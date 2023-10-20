@@ -90,7 +90,6 @@
         "payoutSchemeConfig": {
           "factor": 2.0
         }
-      },
-      "addressType": "litecoin"
+      }
     }]
 }

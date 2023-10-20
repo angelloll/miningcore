@@ -384,12 +384,7 @@ public abstract class BitcoinJobManagerBase<TJob> : JobManagerBase<TJob>
 
         var response = await rpc.ExecuteAsync<BlockchainInfo>(logger, BitcoinCommands.GetBlockchainInfo, ct);
 
-        if(response.Error != null)
-        {
-            logger.Error(() => $"Daemon reports: {response.Error.Message}");
-            return false;
-        }
-        return true;
+        return response.Error == null;
     }
 
     protected override async Task<bool> AreDaemonsConnectedAsync(CancellationToken ct)

@@ -53,4 +53,5 @@ public static class BitcoinUtils
         Debug.Assert(result.GetAddress(litecoin).ToString() == address);
         return result;
     }
+
 }

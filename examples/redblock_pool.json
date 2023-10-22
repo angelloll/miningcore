@@ -63,7 +63,7 @@
             "checkThreshold": 50
         },
         "ports": {
-            "3064": {
+            "3062": {
                 "listenAddress": "0.0.0.0",
                 "difficulty": 2,
                 "name": "GPU/FPGA Mining",

@@ -471,7 +471,7 @@ public class BitcoinJob
 
     protected virtual Money CreateMasternodeOutputs(Transaction tx, Money reward)
     {
-        if(masterNodeParameters.Masternode != null)
+        if(masterNodeParameters.Masternode != null && masterNodeParameters.MasternodePaymentsStarted && masterNodeParameters.MasternodePaymentsEnforced)
         {
             Masternode[] masternodes;
 
@@ -485,12 +485,12 @@ public class BitcoinJob
             {
                 foreach(var masterNode in masternodes)
                 {
-                    if(!string.IsNullOrEmpty(masterNode.Payee))
+                    if(!string.IsNullOrEmpty(masterNode.Script))
                     {
-                        var payeeDestination = BitcoinUtils.AddressToDestination(masterNode.Payee, network);
+						Script payeeAddress = new (masterNode.Script.HexToByteArray());
                         var payeeReward = masterNode.Amount;
 
-                        tx.Outputs.Add(payeeReward, payeeDestination);
+                        tx.Outputs.Add(payeeReward, payeeAddress);
                         reward -= payeeReward;
                     }
                 }

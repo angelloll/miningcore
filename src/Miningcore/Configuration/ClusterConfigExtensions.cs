@@ -174,8 +174,14 @@ public partial class EquihashCoinTemplate
 
     public override string GetAlgorithmName()
     {
-        // TODO: return variant
-        return "Equihash";
+        switch(Symbol)
+        {
+            case "VRSC":
+                return "Verushash";
+            default:
+                // TODO: return variant
+                return "Equihash";
+        }
     }
 
     #endregion

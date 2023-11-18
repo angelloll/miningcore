@@ -9,7 +9,7 @@
         "telegram": "https://t.me/VGC_5GCASH",
         "discord": "https://discord.gg/uXHvyBT",
         "coinbaseHasher": {
-            "hash": "sha256d",
+            "hash": "sha256d"
         },
         "headerHasher": {
             "hash": "x16r-v2"
@@ -643,7 +643,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "yespowerltncg",
+            "hash": "yespowerltncg"
         },
         "blockHasher": {
             "hash": "reverse",
@@ -1383,33 +1383,6 @@
         "explorerTxLink": "https://explorer.mewccrypto.com/tx/{0}",
         "explorerAccountLink": "https://explorer.mewccrypto.com/address/{0}"
     },
-    "garlicoin": {
-        "name": "Garlicoin",
-        "symbol": "GRLC",
-        "family": "bitcoin",
-        "website": "https://garlicoin.io/",
-        "market": "https://www.coingecko.com/en/coins/garlicoin",
-        "twitter": "https://twitter.com/garliccoin",
-        "telegram": "https://t.me/GarlicoinOfficial",
-        "discord": "https://discord.com/invite/hxR8wD6",
-        "coinbaseHasher": {
-            "hash": "sha256d"
-        },
-        "headerHasher": {
-            "hash": "allium"
-        },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [
-                {
-                    "hash": "allium"
-                }
-            ]
-        },
-        "explorerBlockLink": "https://garlicblocks.com/block/$hash$",
-        "explorerTxLink": "https://garlicblocks.com/tx/{0}",
-        "explorerAccountLink": "https://garlicblocks.com/address/{0}"
-    },
     "geekcash": {
         "name": "Geek Cash",
         "symbol": "GEEK",
@@ -1715,7 +1688,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "yespoweric",
+            "hash": "yespoweric"
         },
         "blockHasher": {
             "hash": "reverse",
@@ -1895,7 +1868,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "yespowerltncg",
+            "hash": "yespowerltncg"
         },
         "blockHasher": {
             "hash": "reverse",
@@ -2038,7 +2011,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "power2b",
+            "hash": "power2b"
         },
         "blockHasher": {
             "hash": "reverse",
@@ -2195,10 +2168,8 @@
         },
         "hasFounderFee": true,
         "hasMasterNodes": true,
-		"hasSmartNodes": true,
-        "foundersRewardAddress": [
-            "GTbBCJzqRWyFBMrap2fY39eZaXnLnojJ3F"
-        ],
+        "hasSmartNodes": true,
+        "foundersRewardAddress": ["GTbBCJzqRWyFBMrap2fY39eZaXnLnojJ3F"],
         "shareMultiplier": 1,
         "explorerBlockLink": "https://explorer.neoxa.net/block/$hash$",
         "explorerTxLink": "https://explorer.neoxa.net/tx/{0}",
@@ -2465,15 +2436,15 @@
         "explorerTxLink": "https://openchains.info/coin/picacoin/tx/{0}",
         "explorerAccountLink": "https://openchains.info/coin/picacoin/address/{0}"
     },
-  "pigeoncoin": {
-    	"name": "Pigeoncoin",
-    	"symbol": "PGN",
-    	"family": "bitcoin",
-    	"website": "https://pigeoncoin.org/",
-    	"market": "https://coinmarketcap.com/currencies/pigeoncoin",
-    	"twitter": "https://twitter.com/Pigeoncoin",
-    	"telegram": "https://t.me/Pigeoncoin",
-    	"discord": "https://discord.gg/SZcf63h",
+    "pigeoncoin": {
+        "name": "Pigeoncoin",
+        "symbol": "PGN",
+        "family": "bitcoin",
+        "website": "https://pigeoncoin.org/",
+        "market": "https://coinmarketcap.com/currencies/pigeoncoin",
+        "twitter": "https://twitter.com/Pigeoncoin",
+        "telegram": "https://t.me/Pigeoncoin",
+        "discord": "https://discord.gg/SZcf63h",
         "coinbaseHasher": {
             "hash": "sha256d"
         },
@@ -2488,10 +2459,10 @@
                 }
             ]
         },
-    	"hasFounderFee": true,
-    	"hasMasterNodes": true,
-    	"foundersRewardAddress": ["rLzD7RxVS1QMZ5yYrmoUvfnTNuzgUqJVVK"],
-    	"shareMultiplier": 256,
+        "hasFounderFee": true,
+        "hasMasterNodes": true,
+        "foundersRewardAddress": ["rLzD7RxVS1QMZ5yYrmoUvfnTNuzgUqJVVK"],
+        "shareMultiplier": 256,
         "explorerBlockLink": "http://explorer.pigeoncoin.xyz/block/$height$",
         "explorerTxLink": "http://explorer.pigeoncoin.xyz/tx/{0}",
         "explorerAccountLink": "http://explorer.pigeoncoin.xyz/address/{0}"
@@ -2747,9 +2718,9 @@
                 }
             ]
         },
-		"explorerBlockLink": "http://explorer.redblockcoin.com/block/$height$",
-		"explorerTxLink": "http://explorer.redblockcoin.com/tx/{0}",
-		"explorerAccountLink": "http://explorer.redblockcoin.com/address/{0}"
+        "explorerBlockLink": "http://explorer.redblockcoin.com/block/$height$",
+        "explorerTxLink": "http://explorer.redblockcoin.com/tx/{0}",
+        "explorerAccountLink": "http://explorer.redblockcoin.com/address/{0}"
     },
     "russellcoin": {
         "name": "RussellCoin",
@@ -2783,7 +2754,7 @@
         "explorerTxLink": "https://block.russellcoin.net/tx/{0}",
         "explorerAccountLink": "https://block.russellcoin.net/address/{0}"
     },
-	"geckocoin": {
+    "geckocoin": {
         "name": "Geckocoin",
         "canonicalName": "Geckocoin",
         "symbol": "GEC",
@@ -2805,19 +2776,17 @@
                 {
                     "hash": "sha256d"
                 }
-                    ]
+            ]
         },
         "hasFounderFee": true,
         "hasMasterNodes": true,
-        "foundersRewardAddress": [
-            "Gg4bypdnAPRoMuhfquePZBWegLn5vRUZJw"
-        ],
+        "foundersRewardAddress": ["Gg4bypdnAPRoMuhfquePZBWegLn5vRUZJw"],
         "shareMultiplier": 65536,
         "explorerBlockLink": "https://block.gecko.mn/block/$height$",
         "explorerTxLink": "https://block.gecko.mn/tx/{0}",
         "explorerAccountLink": "https://block.gecko.mn/address/{0}"
     },
-"babacoin": {
+    "babacoin": {
         "name": "Babacoin",
         "canonicalName": "Babacoin",
         "symbol": "BBC",
@@ -2839,13 +2808,11 @@
                 {
                     "hash": "sha256d"
                 }
-                    ]
+            ]
         },
         "hasFounderFee": true,
         "hasMasterNodes": true,
-        "foundersRewardAddress": [
-            "BLbWwABzjJGsSeibe6oJvTK5aEq8Sx7rU9"
-        ],
+        "foundersRewardAddress": ["BLbWwABzjJGsSeibe6oJvTK5aEq8Sx7rU9"],
         "shareMultiplier": 65536,
         "explorerBlockLink": "https://explorer.babacoin.network/block/$height$",
         "explorerTxLink": "https://explorer.babacoin.network/tx/{0}",
@@ -2907,9 +2874,7 @@
         },
         "hasFounderFee": true,
         "hasMasterNodes": true,
-        "foundersRewardAddress": [
-            "JQx6yy4rST5rD1joXWqBsZ6E3ZhFk6gWBk"
-        ],
+        "foundersRewardAddress": ["JQx6yy4rST5rD1joXWqBsZ6E3ZhFk6gWBk"],
         "shareMultiplier": 65536,
         "explorerBlockLink": "https://explorer.jagoancoin.org/block/$height$",
         "explorerTxLink": "https://explorer.jagoancoin.org/tx/{0}",
@@ -3926,34 +3891,34 @@
         "explorerTxLink": "https://chainz.cryptoid.info/via/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/via/address.dws?{0}.htm"
     },
-	"volkshash": {
-		"name": "VolksHash",
-		"symbol": "VHH",
-		"family": "bitcoin",
-		"website": "https://volkshash.org/",
-		"twitter": "https://twitter.com/Volks617958711",
-		"telegram": "",
-		"discord": "https://discord.com/invite/F4ZjTqzsjx",
-		"coinbaseHasher": {
-			"hash": "sha256d"
-		},
-		"headerHasher": {
-			"hash": "yespower"
-		},
-		"blockHasher": {
-			"hash": "reverse",
-			"args": [
-				{
-					"hash": "yespower"
-				}
-			]
-		},
-		"hasFounderReward": true,
-		"hasMasterNodes": true,
-		"shareMultiplier": 65536,
-		"explorerBlockLink": "http://explorer.volkshash.org/block/$hash$",
-		"explorerTxLink": "http://explorer.volkshash.org/tx/{0}",
-		"explorerAccountLink": "http://explorer.volkshash.org/address/{0}"
+    "volkshash": {
+        "name": "VolksHash",
+        "symbol": "VHH",
+        "family": "bitcoin",
+        "website": "https://volkshash.org/",
+        "twitter": "https://twitter.com/Volks617958711",
+        "telegram": "",
+        "discord": "https://discord.com/invite/F4ZjTqzsjx",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yespower"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "yespower"
+                }
+            ]
+        },
+        "hasFounderReward": true,
+        "hasMasterNodes": true,
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "http://explorer.volkshash.org/block/$hash$",
+        "explorerTxLink": "http://explorer.volkshash.org/tx/{0}",
+        "explorerAccountLink": "http://explorer.volkshash.org/address/{0}"
     },
     "voltpotcoin": {
         "name": "Volt Pot Coin",
@@ -4021,6 +3986,34 @@
         "explorerBlockLink": "https://explorer.widecoin.org/block-height/$height$",
         "explorerTxLink": "https://explorer.widecoin.org/tx/{0}",
         "explorerAccountLink": "https://explorer.widecoin.org/address/{0}"
+    },
+    "woodcoin": {
+        "name": "Woodcoin",
+        "canonicalName": "Woodcoin",
+        "symbol": "LOG",
+        "family": "bitcoin",
+        "website": "https://woodcoin.org/",
+        "market": "https://coinmarketcap.com/currencies/woodcoin/",
+        "twitter": "https://twitter.com/woodcoin_jp",
+        "telegram": "",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "skein2"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "explorerBlockLink": "https://explorer.woodcoin.org/block/$hash$",
+        "explorerTxLink": "https://explorer.woodcoin.org/tx/{0}",
+        "explorerAccountLink": "https://explorer.woodcoin.org/address/{0}"
     },
     "worldcoin": {
         "name": "Worldcoin",
@@ -4438,11 +4431,7 @@
                 "solutionPreambleSize": 3,
                 "solver": {
                     "hash": "equihash",
-                    "args": [
-                        200,
-                        9,
-                        "Verushash"
-                    ]
+                    "args": [200, 9, "Verushash"]
                 },
                 "coinbaseTxNetwork": "main",
                 "payFoundersReward": false,
@@ -4459,11 +4448,7 @@
                 "solutionPreambleSize": 3,
                 "solver": {
                     "hash": "equihash",
-                    "args": [
-                        200,
-                        9,
-                        "Verushash"
-                    ]
+                    "args": [200, 9, "Verushash"]
                 },
                 "coinbaseTxNetwork": "testnet",
                 "payFoundersReward": false,
@@ -4480,11 +4465,7 @@
                 "solutionPreambleSize": 3,
                 "solver": {
                     "hash": "equihash",
-                    "args": [
-                        48,
-                        5,
-                        "Verushash"
-                    ]
+                    "args": [48, 5, "Verushash"]
                 },
                 "coinbaseTxNetwork": "regtest",
                 "payFoundersReward": false
@@ -4957,7 +4938,7 @@
         "canonicalName": "Callisto-Network",
         "symbol": "CLO",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "",
         "market": "",
         "twitter": "",
@@ -4975,7 +4956,7 @@
         "canonicalName": "Ethereum",
         "symbol": "ETH",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://ethereum.org/",
         "market": "",
         "twitter": "https://twitter.com/ethdotorg",
@@ -4993,7 +4974,7 @@
         "canonicalName": "Ethereum Classic",
         "symbol": "ETC",
         "family": "ethereum",
-		"ethasher": "etchash",
+        "ethasher": "etchash",
         "website": "https://ethereumclassic.org/",
         "market": "",
         "twitter": "https://twitter.com/eth_classic",
@@ -5011,7 +4992,7 @@
         "canonicalName": "EthereumPoW",
         "symbol": "ETHW",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://ethereumpow.org/",
         "market": "",
         "twitter": "https://twitter.com/EthereumPoW",
@@ -5029,7 +5010,7 @@
         "canonicalName": "EtherOne",
         "symbol": "ETHONE",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://etherone.one/",
         "market": "",
         "twitter": "https://twitter.com/EtherOneChain",
@@ -5047,7 +5028,7 @@
         "canonicalName": "PinkChain",
         "symbol": "PINK",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://pinkchain.net/",
         "market": "",
         "twitter": "https://twitter.com/PinkchainNet",
@@ -5065,7 +5046,7 @@
         "canonicalName": "Ubiq",
         "symbol": "UBIQ",
         "family": "ethereum",
-		"ethasher": "ubqhash",
+        "ethasher": "ubqhash",
         "website": "https://ubiqsmart.com/",
         "market": "",
         "twitter": "https://twitter.com/ubiqsmart",
@@ -5083,7 +5064,7 @@
         "canonicalName": "JIB-Chain",
         "symbol": "JBC",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://jibchain.net/",
         "market": "",
         "twitter": "",
@@ -5101,7 +5082,7 @@
         "canonicalName": "AltcoinChain",
         "symbol": "ALT",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://www.altcoinchain.org/",
         "market": "",
         "twitter": "https://twitter.com/chainAltcoin",
@@ -5119,7 +5100,7 @@
         "canonicalName": "Proof-of-Memmes",
         "symbol": "POM",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://www.proofofmemes.org/",
         "market": "https://www.coingecko.com/en/coins/proof-of-memes-pomchain",
         "twitter": "https://twitter.com/Proof_Of_Memes",
@@ -5137,7 +5118,7 @@
         "canonicalName": "MaxxChain",
         "symbol": "PWR",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://www.maxxchain.org/",
         "market": "",
         "twitter": "https://twitter.com/Maxx_Chain",
@@ -5155,7 +5136,7 @@
         "canonicalName": "Canxium",
         "symbol": "CAU",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://canxium.org/",
         "market": "https://coinpaprika.com/coin/cau-canxium",
         "twitter": "https://twitter.com/canxiumchain",
@@ -5173,7 +5154,7 @@
         "canonicalName": "Rethereum",
         "symbol": "RTH",
         "family": "ethereum",
-		"ethasher": "ethashb3",
+        "ethasher": "ethashb3",
         "website": "https://rethereum.org/",
         "market": "https://safe.trade/trading/rthusdt",
         "twitter": "",
@@ -5191,7 +5172,7 @@
         "canonicalName": "Bitnet-Money",
         "symbol": "BTN",
         "family": "ethereum",
-	"ethasher": "ethash",
+		"ethasher": "ethash",
         "website": "https://bitnet.money/",
         "market": "https://xeggex.com/market/BTN_USDT",
         "twitter": "",
@@ -5204,7 +5185,7 @@
         "explorerTxLink": "https://btnscan.com/tx/{0}?network=Bitnet",
         "explorerAccountLink": "https://btnscan.com/address/{0}"
     },
-	"octaspace": {
+    "octaspace": {
         "name": "OctaSpace",
         "canonicalName": "Octa.Space",
         "symbol": "OCTA",
@@ -5220,14 +5201,14 @@
             "uncle": "https://explorer.octa.space/block/$height$"
         },
         "explorerTxLink": "https://explorer.octa.space/tx/{0}",
-        "explorerAccountLink": "https://explorer.octa.space/address/{0}",
+        "explorerAccountLink": "https://explorer.octa.space/address/{0}"
     },
     "redev2": {
         "name": "RedeV2",
         "canonicalName": "RedeV2",
         "symbol": "REDEV2",
         "family": "ethereum",
-		"ethasher": "ethash",
+        "ethasher": "ethash",
         "website": "https://www.redecoin.eu/",
         "market": "",
         "twitter": "https://mobile.twitter.com/CoinRede",

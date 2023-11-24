@@ -471,7 +471,7 @@ public class BitcoinJob
 
     protected virtual Money CreateMasternodeOutputs(Transaction tx, Money reward)
     {
-        if(masterNodeParameters.Masternode != null && masterNodeParameters.MasternodePaymentsStarted && masterNodeParameters.MasternodePaymentsEnforced)
+        if(masterNodeParameters.Masternode != null)
         {
             Masternode[] masternodes;
 

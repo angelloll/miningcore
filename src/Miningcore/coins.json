@@ -246,35 +246,6 @@
         "explorerTxLink": "https://openchains.info/coin/australiacash/tx/{0}",
         "explorerAccountLink": "https://openchains.info/coin/australiacash/address/{0}"
     },
-    "axe": {
-        "name": "Axe",
-        "canonicalName": "Axe",
-        "symbol": "AXE",
-        "family": "bitcoin",
-        "website": "https://axerunners.com/",
-        "market": "https://coinmarketcap.com/currencies/axe/",
-        "twitter": "https://twitter.com/search?q=$axe",
-        "telegram": "https://t.me/axerunners",
-        "discord": "https://discordapp.com/invite/BqhteaU",
-        "coinbaseHasher": {
-            "hash": "sha256d"
-        },
-        "headerHasher": {
-            "hash": "x11"
-        },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [
-                {
-                    "hash": "x11"
-                }
-            ]
-        },
-        "hasMasterNodes": true,
-        "explorerBlockLink": "https://axe-explorer.arcpool.com/block/$hash$",
-        "explorerTxLink": "https://axe-explorer.arcpool.com/tx/{0}",
-        "explorerAccountLink": "https://axe-explorer.arcpool.com/address/{0}"
-    },
     "barrelcrudecoin": {
         "name": "BarrelCrudeCoin",
         "canonicalName": "BarrelCrudeCoin",
@@ -559,9 +530,9 @@
         "hasFounderFee": true,
         "hasMasterNodes": true,
         "hasSmartNodes": true,
-        "explorerBlockLink": "https://blocks.butcoin.tech/block/$hash$",
-        "explorerTxLink": "https://blocks.butcoin.tech/tx/{0}",
-        "explorerAccountLink": "https://blocks.butcoin.tech/address/{0}"
+        "explorerBlockLink": "https://explorer.butkoin.com/block/$hash$/mainnet",
+        "explorerTxLink": "https://explorer.butkoin.com/tx/{0}/mainnet",
+        "explorerAccountLink": "https://explorer.butkoin.com/address/{0}/mainnet"
     },
     "butkoin-scrypt": {
         "name": "ButKoin Scrypt",
@@ -601,9 +572,38 @@
         "hasFounderFee": true,
         "hasMasterNodes": true,
         "hasSmartNodes": true,
-        "explorerBlockLink": "https://blocks.butcoin.tech/block/$hash$",
-        "explorerTxLink": "https://blocks.butcoin.tech/tx/{0}",
-        "explorerAccountLink": "https://blocks.butcoin.tech/address/{0}"
+        "explorerBlockLink": "https://explorer.butkoin.com/block/$hash$/mainnet",
+        "explorerTxLink": "https://explorer.butkoin.com/tx/{0}/mainnet",
+        "explorerAccountLink": "https://explorer.butkoin.com/address/{0}/mainnet"
+    },
+    "butkoin-yespower": {
+        "name": "ButKoin YesPower",
+        "canonicalName": "ButKoin",
+        "symbol": "BUTK",
+        "family": "bitcoin",
+        "website": "https://butkoin.com/",
+        "market": "",
+        "twitter": "https://twitter.com/ButKoin",
+        "telegram": "",
+        "discord": "https://discord.com/invite/j7T82mKkrw",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yespower"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "sha256d" } ]
+        },
+        "blockTemplateRpcExtraParams": [ "yespower" ],
+        "shareMultiplier": 4194304,
+        "hasFounderFee": true,
+        "hasMasterNodes": true,
+        "hasSmartNodes": true,
+        "explorerBlockLink": "https://explorer.butkoin.com/block/$hash$/mainnet",
+        "explorerTxLink": "https://explorer.butkoin.com/tx/{0}/mainnet",
+        "explorerAccountLink": "https://explorer.butkoin.com/address/{0}/mainnet"
     },
     "butkoin-yespower": {
         "name": "ButKoin YesPower",
@@ -663,9 +663,9 @@
         "hasMasterNodes": true,
         "hasSmartNodes": true,
         "shareMultiplier": 65536,
-        "explorerBlockLink": "https://blocks.butcoin.tech/block/$hash$",
-        "explorerTxLink": "https://blocks.butcoin.tech/tx/{0}",
-        "explorerAccountLink": "https://blocks.butcoin.tech/address/{0}"
+        "explorerBlockLink": "https://explorer.butkoin.com/block/$hash$/mainnet",
+        "explorerTxLink": "https://explorer.butkoin.com/tx/{0}/mainnet",
+        "explorerAccountLink": "https://explorer.butkoin.com/address/{0}/mainnet"
     },
     "cannabiscoin": {
         "name": "Cannabiscoin",
@@ -2170,6 +2170,37 @@
         "explorerTxLink": "https://explorer.mateable.com/tx/{0}",
         "explorerAccountLink": "https://explorer.mateable.com/address/{0}"
     },
+    "mateable-ghostrider": {
+        "name": "Mateable Coin",
+        "canonicalName": "Mateable",
+        "symbol": "MTBC",
+        "family": "bitcoin",
+        "website": "https://coin.mateable.com/",
+        "market": "https://coinpaprika.com/coin/mtbc-mateablecoin",
+        "twitter": "https://twitter.com/mateable",
+        "telegram": "https://t.me/mateablecoin",
+        "discord": "",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "ghostrider"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "sha256d"
+                }
+            ]
+        },
+        "hasMasterNodes": true,
+        "hasSmartNodes": true,
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://explorer.mateable.com/block/$hash$",
+        "explorerTxLink": "https://explorer.mateable.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.mateable.com/address/{0}"
+    },
     "maza": {
         "name": "Maza",
         "canonicalName": "Maza",
@@ -2362,9 +2393,9 @@
         "canonicalName": "Namecoin",
         "symbol": "NMC",
         "family": "bitcoin",
-        "website": "",
-        "market": "",
-        "twitter": "",
+        "website": "https://namecoin.info/",
+        "market": "https://coinpaprika.com/coin/nmc-namecoin",
+        "twitter": "https://twitter.com/namecoin",
         "telegram": "",
         "discord": "",
         "coinbaseHasher": {
@@ -2381,9 +2412,9 @@
                 }
             ]
         },
-        "explorerBlockLink": "https://explorer.namecoin.info/b/$height$",
-        "explorerTxLink": "https://explorer.namecoin.info/tx/{0}",
-        "explorerAccountLink": "https://explorer.namecoin.info/a/{0}"
+        "explorerBlockLink": "https://www.namebrow.se/$height$",
+        "explorerTxLink": "https://www.namebrow.se/tx/{0}",
+        "explorerAccountLink": "https://www.namebrow.se/{0}"
     },
     "neoxa": {
         "name": "Neoxa",
@@ -3172,6 +3203,36 @@
         "explorerTxLink": "https://explorer.neurai.org/tx/{0}",
         "explorerAccountLink": "https://explorer.neurai.org/address/{0}"
     },
+    "netsis": {
+        "name": "Netsis",
+        "canonicalName": "netsis",
+        "symbol": "net",
+        "family": "bitcoin",
+        "website": "https://netsiscoin.com/",
+        "market": "https://coinpaprika.com/coin/net-netcoin",
+        "github": "",
+        "twitter": "https://twitter.com/n3tsiscoin",
+        "telegram": "",
+        "discord": "https://discord.com/invite/FWynA6nQd3",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x11"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+                {
+                    "hash": "x11"
+                }
+            ]
+        },
+        "hasMasterNodes": true,
+        "explorerBlockLink": "https://explorer.netsiscoin.com/block/$hash$",
+        "explorerTxLink": "https://explorer.netsiscoin.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.netsiscoin.com/address/{0}"
+    },
     "novo": {
         "name": "Novo",
         "symbol": "NOVO",
@@ -3671,7 +3732,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "yespowersugar",
+            "hash": "yespowersugar"
         },
         "blockHasher": {
             "hash": "reverse",
@@ -4247,6 +4308,37 @@
         "explorerTxLink": "https://chainz.cryptoid.info/via/tx.dws?{0}.htm",
         "explorerAccountLink": "https://chainz.cryptoid.info/via/address.dws?{0}.htm"
     },
+    "vishai": {
+        "name": "VishAiCoin",
+        "canonicalName": "VishAiCoin",
+        "symbol": "VISH",
+        "family": "bitcoin",
+        "website": "https://vishcoin.com/",
+        "twitter": "https://twitter.com/vishcoinai",
+        "telegram": "https://t.me/vishaiofficial",
+        "github": "https://github.com/vishcoin/vishai",
+        "explorer": "https://explorer.vishcoin.com",
+        "discord": "https://discord.com/invite/cxCfHuNpWn",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "yespower"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [
+				{
+					"hash": "yespower"
+				}
+			]
+        },
+        "hasMasterNodes": true,
+        "shareMultiplier": 65536,
+        "explorerBlockLink": "https://explorer.vishcoin.com/block/$hash$",
+        "explorerTxLink": "https://explorer.vishcoin.com/tx/{0}",
+        "explorerAccountLink": "https://explorer.vishcoin.com/address/{0}"
+    },
     "volkshash": {
         "name": "VolksHash",
         "symbol": "VHH",
@@ -4327,7 +4419,7 @@
             "hash": "sha256d"
         },
         "headerHasher": {
-            "hash": "yespower",
+            "hash": "yespower"
         },
         "blockHasher": {
             "hash": "reverse",

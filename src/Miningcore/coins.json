@@ -39,8 +39,7 @@
     "aipowergrid": {
         "name": "AIPowerGrid",
         "symbol": "AIPG",
-        "family": "progpow",
-        "progpower": "kawpow",
+        "family": "ravencoin",
         "website": "https://www.aipowergrid.io/",
         "market": "",
         "twitter": "",
@@ -52,15 +51,7 @@
         "headerHasher": {
             "hash": "sha256d"
         },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [
-                {
-                    "hash": "sha256d"
-                }
-            ]
-        },
-	"hasCommunityAddress": true,
+        "hasCommunityAddress": true,
         "shareMultiplier": 1,
         "explorerBlockLink": "https://explorer.aipowergrid.io/block/$hash$",
         "explorerTxLink": "https://explorer.aipowergrid.io/tx/{0}",
@@ -754,8 +745,7 @@
     "cryptoluck": {
         "name": "Cryptoluck",
         "symbol": "CL",
-        "family": "progpow",
-        "progpower": "kawpow",
+        "family": "ravencoin",
         "website": "https://cryptoluck.online/",
         "market": "",
         "twitter": "https://twitter.com/cryptoluck_cl",
@@ -767,15 +757,7 @@
         "headerHasher": {
             "hash": "sha256d"
         },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [
-                {
-                    "hash": "sha256d"
-                }
-            ]
-        },
-	"hasCommunityAddress": true,
+        "hasCommunityAddress": true,
         "shareMultiplier": 1,
         "explorerBlockLink": "https://explorer.cryptoluck.online/block/$hash$",
         "explorerTxLink": "https://explorer.cryptoluck.online/tx/{0}",
@@ -1740,8 +1722,7 @@
     "gamepass": {
         "name": "Gamepass",
         "symbol": "GPN",
-        "family": "progpow",
-        "progpower": "kawpow",
+        "family": "ravencoin",
         "website": "https://gamepass.network/",
         "market": "",
         "twitter": "",
@@ -1752,14 +1733,6 @@
         },
         "headerHasher": {
             "hash": "sha256d"
-        },
-        "blockHasher": {
-            "hash": "reverse",
-            "args": [
-                {
-                    "hash": "sha256d"
-                }
-            ]
         },
         "hasProofOfGameplayAddress": true,
         "hasDevFundAddress": true,
